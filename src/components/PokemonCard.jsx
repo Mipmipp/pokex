@@ -9,7 +9,7 @@ const PokemonCard = ({ urlPokemonClicked }) => {
    const [flavorText, setFlavorText] = useState("");
    const [secondFetchDone, setSecondFetchDone] = useState(false);
 
-   const getApiData = async () => {
+   const getPokemonClickedData = async () => {
       try {
          const response = await fetch(urlPokemonClicked);
          if (response.ok) {
@@ -49,12 +49,12 @@ const PokemonCard = ({ urlPokemonClicked }) => {
       }
    };
 
-   const { status } = useQuery(["pokemon"], getApiData);
+   const { status } = useQuery(["pokemon"], getPokemonClickedData);
 
    const { flavor } = useQuery(["flavorText"], getAFlavorText);
 
    useEffect(() => {
-      getApiData();
+      getPokemonClickedData();
    }, [urlPokemonClicked]);
 
    if (secondFetchDone === false) {
