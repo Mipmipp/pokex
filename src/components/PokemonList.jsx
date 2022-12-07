@@ -36,6 +36,8 @@ const PokemonList = () => {
       }
    };
 
+   const { error, isLoading } = useQuery(["pokemonList"], getApiData);
+
 };
 
 export default PokemonList;
