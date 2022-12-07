@@ -74,6 +74,17 @@ const PokemonList = () => {
       );
    }
 
+   if (error) {
+      return (
+         <div className="error">
+            <Alert variant="danger">
+               An error happened. Please try to restart the page and be
+               connected to wifi.
+            </Alert>
+         </div>
+      );
+   }
+
 };
 
 export default PokemonList;
