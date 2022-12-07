@@ -53,6 +53,10 @@ const PokemonCard = ({ urlPokemonClicked }) => {
       }
    };
 
+   const { status } = useQuery(["pokemon"], getApiData);
+
+   const { flavor } = useQuery(["flavorText"], getAFlavorText);
+
    }
 };
 
