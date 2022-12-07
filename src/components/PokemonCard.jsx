@@ -13,6 +13,18 @@ const PokemonCard = ({ urlPokemonClicked }) => {
    const [flavorText, setFlavorText] = useState("");
    const [secondFetchDone, setSecondFetchDone] = useState(false);
 
+   const getApiData = async () => {
+      try {
+         const response = await fetch(urlPokemonClicked);
+         if (response.ok) {
+            const data = await response.json();
+            setPokemonData(data);
+            getAFlavorText();
+         }
+      } catch (error) {
+         console.log(error);
+      }
+   };
    }
 };
 
