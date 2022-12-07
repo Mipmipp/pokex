@@ -10,18 +10,18 @@ import "./PokemonList.css";
 
 const PokemonList = () => {
    const [pokemons, setPokemons] = useState([]);
-   const [actualPage, setActualPage] = useState(
-      "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=16"
-   );
    const [pokemonClicked, setPokemonClicked] = useState(
       "https://pokeapi.co/api/v2/pokemon/1/"
    );
-   const [previous, setPrevious] = useState("");
-   const [next, setNext] = useState("");
+   const [actualPage, setActualPage] = useState(
+      "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=16"
+   );
+   const [previousPage, setPreviousPage] = useState("");
+   const [nextPage, setNextPage] = useState("");
    const [variantButtonLeft, setVariantButtonLeft] = useState("dark");
    const [variantButtonRight, setVariantButtonRight] = useState("dark");
 
-   const getApiData = async () => {
+   const getPokemonList = async () => {
       try {
          const response = await fetch(actualPage);
          if (response.ok) {
@@ -33,32 +33,32 @@ const PokemonList = () => {
       }
    };
 
-   const { error, isLoading } = useQuery(["pokemonList"], getApiData);
+   const { error, isLoading } = useQuery(["pokemonList"], getPokemonList);
 
    function manageApiData(data) {
       setPokemons(data.results);
-      setPrevious(data.previous);
-      setNext(data.next);
+      setPreviousPage(data.previous);
+      setNextPage(data.next);
    }
 
-   function managePreviousPage() {
-      if (previous === null) {
+   function handleBrowsePreviousPage() {
+      if (!previousPage) {
          setVariantButtonLeft("danger");
       } else {
-         setActualPage(previous);
+         setActualPage(previousPage);
       }
    }
 
-   function manageNextPage() {
-      if (next === null) {
+   function handleBrowseNextPage() {
+      if (!nextPage) {
          setVariantButtonRight("danger");
       } else {
-         setActualPage(next);
+         setActualPage(nextPage);
       }
    }
 
    useEffect(() => {
-      getApiData();
+      getPokemonList();
       setVariantButtonRight("dark");
       setVariantButtonLeft("dark");
    }, [actualPage]);
@@ -83,7 +83,7 @@ const PokemonList = () => {
    }
 
    return (
-      <div>
+      <div className="page-layout">
          <PokemonCard urlPokemonClicked={pokemonClicked} />
          <div className="div-list">
             <Row className="pokemon-list">
