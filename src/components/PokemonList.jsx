@@ -85,6 +85,35 @@ const PokemonList = () => {
       );
    }
 
+   return (
+      <div>
+         <PokemonCard urlPokemonClicked={pokemonClicked} />
+         <div className="div-list">
+            <Row className="pokemon-list">
+               {pokemons.map((pokemon) => {
+                  return (
+                     <PokemonOfList
+                        key={pokemon.name}
+                        name={pokemon.name}
+                        url={pokemon.url}
+                        pokemonClicked={() => setPokemonClicked(pokemon.url)}
+                     />
+                  );
+               })}
+            </Row>
+            <div className="buttons">
+               <ButtonLeft
+                  onClickEvent={() => managePreviousPage()}
+                  variant={variantButtonLeft}
+               />
+               <ButtonRight
+                  onClickEvent={() => manageNextPage()}
+                  variant={variantButtonRight}
+               />
+            </div>
+         </div>
+      </div>
+   );
 };
 
 export default PokemonList;
