@@ -8,7 +8,12 @@ const PokemonOfList = ({ name, url, pokemonClicked }) => {
 
    return (
       <Col className="pokemon-body" xs={6} sm={3}>
-         <Card className="pokemon" border="dark" onClick={pokemonClicked}>
+         <Card
+            className="pokemon"
+            border="dark"
+            onClick={pokemonClicked}
+            title={name}
+         >
             <Card.Img
                className="pokemon-image"
                variant="top"
