@@ -4,6 +4,10 @@ import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { QueryClient, QueryClientProvider } from "react-query";
+// (delete this to use react-querydeveloper tools)
+// import { ReactQueryDevtools } from "react-query/devtools";
+// (then add the next line below <app />)
+// <ReactQueryDevtools />
 
 const queryClient = new QueryClient({
    defaultOptions: {
