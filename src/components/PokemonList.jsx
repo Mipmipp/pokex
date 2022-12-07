@@ -38,6 +38,12 @@ const PokemonList = () => {
 
    const { error, isLoading } = useQuery(["pokemonList"], getApiData);
 
+   function manageApiData(data) {
+      setPokemons(data.results);
+      setPrevious(data.previous);
+      setNext(data.next);
+   }
+
 };
 
 export default PokemonList;
