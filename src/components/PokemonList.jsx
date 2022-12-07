@@ -60,6 +60,12 @@ const PokemonList = () => {
       }
    }
 
+   useEffect(() => {
+      getApiData();
+      setVariantButtonRight("dark");
+      setVariantButtonLeft("dark");
+   }, [actualPage]);
+
 };
 
 export default PokemonList;
