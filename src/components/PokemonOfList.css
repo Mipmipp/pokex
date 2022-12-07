@@ -1,0 +1,39 @@
+@media only screen and (max-width: 700px) {
+   .pokemon-body {
+      width: 9rem !important;
+   }
+
+   .pokemon {
+      width: 5rem !important;
+      margin-bottom: 1rem;
+   }
+}
+
+.pokemon-image {
+   width: 5.6rem !important;
+   height: 5.6rem !important;
+   align-self: center;
+}
+
+.pokemon-of-list-body {
+   background: #454d52;
+}
+
+.pokemon-name {
+   font-size: 0.9rem !important;
+   font-family: Inter, sans-serif;
+   font-weight: bold !important;
+   color: #ced2d6;
+}
+
+.pokemon-body {
+   text-align: center;
+   margin-bottom: 0.75rem;
+}
+
+.pokemon {
+   width: 7.5rem !important;
+   background: #7f8790 !important;
+   position: inherit !important;
+   cursor: pointer !important;
+}
