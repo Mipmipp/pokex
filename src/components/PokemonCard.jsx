@@ -25,6 +25,34 @@ const PokemonCard = ({ urlPokemonClicked }) => {
          console.log(error);
       }
    };
+
+   const getAFlavorText = async () => {
+      try {
+         const response = await fetch(
+            `https://pokeapi.co/api/v2/pokemon-species/${
+               urlPokemonClicked.split("/")[6]
+            }`
+         );
+         if (response.ok) {
+            const data = await response.json();
+            // data is an object with lots of flavor text entries. After that, texts with the language 'en' are filtered.
+            const fileterdFlavorTextEntries = data.flavor_text_entries.filter(
+               (element) => element.language.name === "en"
+            );
+            // this choose the first object with 'en' language.
+            // the text is made for Nintendo Pokemon ROMs, so it is edited to contain no weird symbols like arrows
+            setFlavorText(
+               fileterdFlavorTextEntries[0].flavor_text
+                  .replace("\f", "\n")
+                  .toLowerCase()
+            );
+            setSecondFetchDone(true);
+         }
+      } catch (error) {
+         console.log(error);
+      }
+   };
+
    }
 };
 
