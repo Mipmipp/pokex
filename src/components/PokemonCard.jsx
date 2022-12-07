@@ -9,6 +9,10 @@ import Col from "react-bootstrap/Col";
 import "./PokemonCard.css";
 
 const PokemonCard = ({ urlPokemonClicked }) => {
+   const [pokemonData, setPokemonData] = useState([]);
+   const [flavorText, setFlavorText] = useState("");
+   const [secondFetchDone, setSecondFetchDone] = useState(false);
+
    }
 };
 
