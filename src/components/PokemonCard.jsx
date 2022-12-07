@@ -61,6 +61,64 @@ const PokemonCard = ({ urlPokemonClicked }) => {
       getApiData();
    }, [urlPokemonClicked]);
 
+   if (secondFetchDone === false) {
+      return;
+   } else {
+      return (
+         <div className="card-pokemon-div">
+            <Card border="dark" className="card-pokemon">
+               <Card.Header>{pokemonData.name}</Card.Header>
+               <div className="div-card-header">
+                  <Card.Img
+                     variant="bottom"
+                     src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonData.id}.png`}
+                  />
+               </div>
+
+               <Card.Header className="second-card-header">
+                  <Row className="information">
+                     <Col xs={4}>ID°{pokemonData.id}</Col>
+                     <Col xs={4}>
+                        Height: {(pokemonData.height * 10) / 100}m
+                     </Col>
+                     <Col xs={4}>Weight: {pokemonData.weight / 10}kg</Col>
+                  </Row>
+               </Card.Header>
+               <Card.Body>
+                  <Card.Text>{flavorText}</Card.Text>
+                  <hr></hr>
+                  <Container>
+                     <Row>
+                        <Col xs={6} sm={4}>
+                           HP <br></br>
+                           {pokemonData.stats[0].base_stat}
+                        </Col>
+                        <Col xs={6} sm={4}>
+                           Attack <br></br>
+                           {pokemonData.stats[1].base_stat}
+                        </Col>
+                        <Col xs={6} sm={4}>
+                           Defense <br></br>
+                           {pokemonData.stats[2].base_stat}
+                        </Col>
+                        <Col xs={6} sm={4}>
+                           special-attack <br></br>
+                           {pokemonData.stats[3].base_stat}
+                        </Col>
+                        <Col xs={6} sm={4}>
+                           Special-defense <br></br>
+                           {pokemonData.stats[4].base_stat}
+                        </Col>
+                        <Col xs={6} sm={4}>
+                           Speed <br></br>
+                           {pokemonData.stats[5].base_stat}
+                        </Col>
+                     </Row>
+                  </Container>
+               </Card.Body>
+            </Card>
+         </div>
+      );
    }
 };
 
