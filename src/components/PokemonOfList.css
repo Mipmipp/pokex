@@ -24,6 +24,10 @@
    font-family: Inter, sans-serif;
    font-weight: bold !important;
    color: #ced2d6;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+   text-transform: capitalize;
 }
 
 .pokemon-body {
@@ -36,4 +40,5 @@
    background: #7f8790 !important;
    position: inherit !important;
    cursor: pointer !important;
+   height: 100% !important;
 }
