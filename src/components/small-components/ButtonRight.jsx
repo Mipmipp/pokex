@@ -8,7 +8,6 @@ function ButtonRight({ onClickEvent, variant, styles }) {
          variant={variant}
          id="button-right"
          onClick={onClickEvent}
-         style={styles}
       ></Button>
    );
 }
