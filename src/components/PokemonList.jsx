@@ -66,6 +66,14 @@ const PokemonList = () => {
       setVariantButtonLeft("dark");
    }, [actualPage]);
 
+   if (isLoading) {
+      return (
+         <div className="loading">
+            <Spinner animation="grow" variant="light" />
+         </div>
+      );
+   }
+
 };
 
 export default PokemonList;
