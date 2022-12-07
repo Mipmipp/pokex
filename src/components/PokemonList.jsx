@@ -100,11 +100,11 @@ const PokemonList = () => {
             </Row>
             <div className="buttons">
                <ButtonLeft
-                  onClickEvent={() => managePreviousPage()}
+                  onClickEvent={() => handleBrowsePreviousPage()}
                   variant={variantButtonLeft}
                />
                <ButtonRight
-                  onClickEvent={() => manageNextPage()}
+                  onClickEvent={() => handleBrowseNextPage()}
                   variant={variantButtonRight}
                />
             </div>
