@@ -44,6 +44,22 @@ const PokemonList = () => {
       setNext(data.next);
    }
 
+   function managePreviousPage() {
+      if (previous === null) {
+         setVariantButtonLeft("danger");
+      } else {
+         setActualPage(previous);
+      }
+   }
+
+   function manageNextPage() {
+      if (next === null) {
+         setVariantButtonRight("danger");
+      } else {
+         setActualPage(next);
+      }
+   }
+
 };
 
 export default PokemonList;
