@@ -23,6 +23,19 @@ const PokemonList = () => {
    const [next, setNext] = useState("");
    const [variantButtonLeft, setVariantButtonLeft] = useState("dark");
    const [variantButtonRight, setVariantButtonRight] = useState("dark");
+
+   const getApiData = async () => {
+      try {
+         const response = await fetch(actualPage);
+         if (response.ok) {
+            const data = await response.json();
+            manageApiData(data);
+         }
+      } catch (error) {
+         console.log(error);
+      }
+   };
+
 };
 
 export default PokemonList;
