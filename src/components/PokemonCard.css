@@ -1,0 +1,145 @@
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+   .card-pokemon-div {
+      text-align: -webkit-center !important;
+      position: static !important;
+   }
+
+   .card-pokemon {
+      left: 0px !important;
+      position: static !important;
+      width: 39rem !important;
+   }
+}
+
+@media only screen and (max-width: 700px) {
+   .card-pokemon-div {
+      text-align: -webkit-center;
+      position: static !important;
+   }
+
+   .card-pokemon {
+      position: static !important;
+      width: 19rem !important;
+   }
+
+   .div-card-header {
+      width: 16.5rem !important;
+   }
+
+   .second-card-header {
+      width: 16.5rem !important;
+      font-size: 0.6rem !important;
+   }
+
+   .information {
+      width: -1% !important;
+      font-size: 0.5rem;
+   }
+
+   .card-text {
+      font-size: 0.9rem !important;
+   }
+
+   .stats {
+      width: -1% !important;
+   }
+
+   .col-sm-4.col-6 {
+      margin-bottom: 1rem !important;
+   }
+}
+
+.card-pokemon-div {
+   position: absolute;
+}
+
+.card-pokemon {
+   width: 28rem;
+   left: 4.3rem;
+   text-align-last: center;
+   background: rgb(89, 96, 102);
+   background: linear-gradient(
+      321deg,
+      rgba(89, 96, 102, 1) 0%,
+      rgba(69, 76, 82, 1) 51%,
+      rgba(56, 63, 69, 1) 100%
+   );
+}
+
+.card hr {
+   color: #7f8790;
+   opacity: 100 !important;
+   margin-top: 0.4rem;
+}
+
+.card-header {
+   border-bottom: solid 0.1px #7f8790 !important;
+   font-weight: bold;
+   font-size: 1.1rem;
+   color: #ced2d6 !important;
+   text-transform: capitalize;
+}
+
+.div-card-header {
+   width: 25rem;
+   height: 12.5rem;
+   align-self: center;
+   margin-top: 0.6rem;
+   border: solid 0.1px #7f8790 !important;
+   border-bottom: 0 !important;
+   border-bottom: 0px;
+   background: rgb(89, 96, 102);
+   background: linear-gradient(
+      299deg,
+      rgba(89, 96, 102, 1) 0%,
+      rgba(127, 135, 144, 1) 51%,
+      rgba(89, 96, 102, 1) 100%
+   );
+}
+
+.card-img-bottom {
+   width: 10rem !important;
+   height: 10rem !important;
+   margin-top: 1.1rem;
+}
+
+.information {
+   place-content: center;
+}
+
+.second-card-header.card-header {
+   border: solid 0.1px #7f8790 !important;
+   border-top: 0 !important;
+   font-size: 0.75rem;
+   color: #ced2d6 !important;
+}
+
+.card-text {
+   font-style: italic;
+   color: #ced2d6 !important;
+}
+
+.container {
+   margin-top: 1.5rem;
+   color: #d6a9d5;
+   font-size: 0.9rem;
+}
+
+.second-card-header {
+   width: 25rem;
+   align-self: center;
+   border: solid 0.1px #b5b5b5;
+   font-size: 0.8rem;
+}
+
+.second-card-body {
+   place-content: center;
+   color: #ced2d6 !important;
+   margin-top: 0.1rem;
+   font-weight: bold;
+   font-size: 0.9rem;
+}
+
+.col-sm-4.col-6 {
+   margin-bottom: 1rem;
+}

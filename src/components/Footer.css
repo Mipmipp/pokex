@@ -1,0 +1,27 @@
+@media only screen and (max-width: 375px) {
+   .information-text {
+      font-size: 1rem !important;
+   }
+}
+
+#footer {
+   background-color: #121212;
+   padding-bottom: 0.5rem;
+   text-align-last: center;
+}
+
+.container-footer {
+   font-size: 1.12rem;
+}
+
+.information-text {
+   color: #7f8790;
+}
+
+.i {
+   color: #7f8790;
+}
+
+.link {
+   color: #ced2d6;
+}

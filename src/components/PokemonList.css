@@ -1,0 +1,77 @@
+@media only screen and (min-width: 1201px) {
+   .page-layout {
+      max-width: 1350px;
+      margin-inline: auto;
+   }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+   .pokemon-list {
+      margin-left: 0px !important;
+   }
+
+   .buttons {
+      margin-top: 1.5rem;
+   }
+
+   #button-left {
+      margin-left: 1rem !important;
+      margin-right: 1rem !important;
+   }
+}
+
+@media only screen and (max-width: 700px) {
+   .pokemon-list {
+      width: 19.3rem !important;
+      margin-left: 0rem !important;
+      margin-top: 4rem;
+      align-content: center;
+      place-content: center;
+   }
+
+   .buttons {
+      margin-top: 1.5rem !important;
+   }
+
+   #button-left {
+      margin-right: 3rem !important;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+   .buttons {
+      margin-top: 2.5rem !important;
+   }
+
+   #button-left {
+      margin-right: 1rem !important;
+      margin-left: 38rem !important;
+   }
+}
+
+.loading {
+   text-align: center;
+   margin-top: 5rem;
+   margin-bottom: 2rem;
+}
+
+.error {
+   text-align: center;
+   margin-top: 5rem;
+   margin-bottom: 2rem;
+   padding: 2rem;
+}
+
+.spinner-grow.text-light {
+   padding: 3.2rem;
+}
+
+.div-list {
+   text-align: -webkit-center;
+}
+
+.row.pokemon-list {
+   width: 34.3rem;
+   margin-left: 37rem;
+   margin-top: 4rem;
+}
