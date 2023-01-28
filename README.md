@@ -1,8 +1,10 @@
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c26eacd0-4243-4fcc-89bd-01942a40fc7b/deploy-status)](https://app.netlify.com/sites/mipmipp-pokedex/deploys)
+
 # Pokedex
 
 This is a page where you can see all pokemon's stats and sprites from the anime pokemon.  
-It was created with react, using react-query to handle API calls cache and react-bootstrap to styles.  
+It was created with react, using react-query to handle API calls cache, react-bootstrap to styles and framer motion to animations.
 API used: [pokeapi](https://pokeapi.co/).
 
 # Demo
