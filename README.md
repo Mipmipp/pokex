@@ -1,5 +1,5 @@
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c26eacd0-4243-4fcc-89bd-01942a40fc7b/deploy-status)](https://app.netlify.com/sites/mipmipp-pokedex/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1bdf6936-fb52-47ab-a4ed-fa4c8f200d57/deploy-status)](https://app.netlify.com/sites/mipmipp-pokedex/deploys)
 
 # Pokedex
 
