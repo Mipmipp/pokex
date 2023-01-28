@@ -5,6 +5,17 @@ import { Card, Container, Row, Col } from "react-bootstrap";
 import "./PokemonCard.css";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 
+const variants = {
+   hidden: {
+      scale: 0
+   },
+   visible: {
+      scale: 1,
+      transition: {
+         duration: 1.5
+      }
+   },
+}
 
 const PokemonCard = ({ urlPokemonClicked }) => {
    const [pokemonData, setPokemonData] = useState([]);

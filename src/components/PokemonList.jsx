@@ -9,6 +9,17 @@ import ButtonRight from "./small-components/ButtonRight";
 import "./PokemonList.css";
 import { motion } from "framer-motion/dist/framer-motion";
 
+const variants = {
+   hidden: {
+      opacity: 0
+   },
+   visible: {
+      opacity: 1,
+      transition: {
+         duration: 1
+      }
+   }
+}
 
 const PokemonList = () => {
    const [pokemons, setPokemons] = useState([]);

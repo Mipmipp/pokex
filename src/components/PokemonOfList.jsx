@@ -4,6 +4,18 @@ import { Col, Card } from "react-bootstrap";
 import { motion } from "framer-motion/dist/framer-motion";
 import "./PokemonOfList.css";
 
+const variants = {
+   hidden: {
+      opacity: 0.4
+   },
+   visible: {
+      opacity: 1,
+      transition: {
+         duration: 2
+      }
+   }
+}
+
 const PokemonOfList = ({ name, url, pokemonClicked }) => {
    const [pokemonID] = useState(`${url.split("/")[6]}`);
 
