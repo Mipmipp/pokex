@@ -3,6 +3,19 @@ import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import "./PokemonCard.css";
+import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
+
+const variants = {
+   hidden: {
+      scale: 0
+   },
+   visible: {
+      scale: 1,
+      transition: {
+         duration: 1.5
+      }
+   },
+}
 
 const PokemonCard = ({ urlPokemonClicked }) => {
    const [pokemonData, setPokemonData] = useState([]);
@@ -57,6 +70,7 @@ const PokemonCard = ({ urlPokemonClicked }) => {
       "Special Defense",
       "Speed",
    ];
+
    const { status } = useQuery(["pokemon"], getPokemonClickedData);
 
    const { flavor } = useQuery(["flavorText"], getAFlavorText);
@@ -66,33 +80,82 @@ const PokemonCard = ({ urlPokemonClicked }) => {
    }, [urlPokemonClicked]);
 
    return secondFetchDone === false ? null : (
-      <div className="card-pokemon-div">
+      <AnimatePresence>
+      <motion.div
+         key={urlPokemonClicked}
+         className="card-pokemon-div"
+         initial='hidden'
+         animate='visible'
+         exit='hidden'
+         variants={variants}
+      >
          <Card border="dark" className="card-pokemon">
-            <Card.Header>{pokemonData.name}</Card.Header>
+            <Card.Header>
+               <motion.div
+                  whileHover={{ scale: 1.3 }}
+               >
+               {pokemonData.name}
+               </motion.div>
+            </Card.Header>
             <div className="div-card-header">
-               <Card.Img
-                  variant="bottom"
-                  src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonData.id}.png`}
-               />
+               <motion.div
+                  className='motion-div'
+                  whileHover={{ scale: 1.5 }}
+               >
+                  <Card.Img
+                     variant="bottom"
+                     src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonData.id}.png`}
+                  />
+               </motion.div>
             </div>
-
             <Card.Header className="second-card-header">
                <Row className="information">
-                  <Col xs={4}>ID°{pokemonData.id}</Col>
-                  <Col xs={4}>Height: {(pokemonData.height * 10) / 100}m</Col>
-                  <Col xs={4}>Weight: {pokemonData.weight / 10}kg</Col>
+                  <Col xs={4}>
+                     <motion.div
+                        className='motion-div'
+                        whileHover={{ scale: 1.1 }}
+                     >
+                        ID°{pokemonData.id}
+                     </motion.div>
+                  </Col>
+                  <Col xs={4}>
+                     <motion.div
+                        className='motion-div'
+                        whileHover={{ scale: 1.1 }}
+                     >
+                        Height: {(pokemonData.height * 10) / 100}m
+                     </motion.div>
+                  </Col>
+                  <Col xs={4}>
+                     <motion.div
+                        className='motion-div'
+                        whileHover={{ scale: 1.1 }}
+                     >
+                        Weight: {pokemonData.weight / 10}kg
+                     </motion.div>
+                  </Col>
                </Row>
             </Card.Header>
             <Card.Body>
-               <Card.Text>{flavorText}</Card.Text>
+               <motion.div
+                     className='motion-div'
+                     whileHover={{ scale: 1.04 }}
+                  >
+                     <Card.Text>{flavorText}</Card.Text>
+               </motion.div>
                <hr></hr>
                <Container>
                   <Row>
                      {stats.map((value, index) => {
                         return (
                            <Col xs={6} sm={4} key={value}>
-                              {value} <br></br>
-                              {pokemonData.stats[index].base_stat}
+                              <motion.div
+                                 className='motion-div'
+                                 whileHover={{ scale: 1.2 }}
+                              >
+                                 {value} <br></br>
+                                 {pokemonData.stats[index].base_stat}
+                              </motion.div>
                            </Col>
                         );
                      })}
@@ -100,7 +163,8 @@ const PokemonCard = ({ urlPokemonClicked }) => {
                </Container>
             </Card.Body>
          </Card>
-      </div>
+      </motion.div>
+      </AnimatePresence>
    );
 };
 

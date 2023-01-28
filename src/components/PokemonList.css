@@ -12,10 +12,10 @@
 
    .buttons {
       margin-top: 1.5rem;
+      margin-left: 1rem !important;
    }
 
    #button-left {
-      margin-left: 1rem !important;
       margin-right: 1rem !important;
    }
 }
@@ -41,11 +41,11 @@
 @media only screen and (min-width: 1200px) {
    .buttons {
       margin-top: 2.5rem !important;
+      margin-left: 38rem !important;
    }
 
    #button-left {
       margin-right: 1rem !important;
-      margin-left: 38rem !important;
    }
 }
 
@@ -74,4 +74,8 @@
    width: 34.3rem;
    margin-left: 37rem;
    margin-top: 4rem;
+}
+
+.motion-div {
+   display: inline-block;
 }

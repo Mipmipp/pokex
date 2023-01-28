@@ -42,3 +42,7 @@
    cursor: pointer !important;
    height: 100% !important;
 }
+
+.motion-div {
+   display: inline-block;
+}
