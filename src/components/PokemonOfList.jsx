@@ -21,22 +21,30 @@ const PokemonOfList = ({ name, url, pokemonClicked }) => {
 
    return (
       <Col className="pokemon-body" xs={6} sm={3}>
-         <Card
-            className="pokemon"
-            border="dark"
-            onClick={pokemonClicked}
-            title={name}
+         <motion.div
+            initial='hidden'
+            animate='visible'
+            variants={variants}
+            whileHover={{ scale: 1.06 }}
+            whileTap={{ scale: 0.9 }}
          >
-            <Card.Img
-               className="pokemon-image"
-               variant="top"
-               alt={name}
-               src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonID}.png`}
-            />
-            <Card.Body className="pokemon-of-list-body">
-               <Card.Title className="pokemon-name">{name}</Card.Title>
-            </Card.Body>
-         </Card>
+            <Card
+               className="pokemon"
+               border="dark"
+               onClick={pokemonClicked}
+               title={name}
+            >
+               <Card.Img
+                  className="pokemon-image"
+                  variant="top"
+                  alt={name}
+                  src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonID}.png`}
+               />
+               <Card.Body className="pokemon-of-list-body">
+                  <Card.Title className="pokemon-name">{name}</Card.Title>
+               </Card.Body>
+            </Card>
+         </motion.div>
       </Col>
    );
 };
