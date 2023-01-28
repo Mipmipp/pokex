@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import { motion } from "framer-motion/dist/framer-motion";
 import "./ButtonLeft.css";
 
 function ButtonLeft({ onClickEvent, variant }) {

@@ -7,6 +7,8 @@ import PokemonCard from "./PokemonCard";
 import ButtonLeft from "./small-components/ButtonLeft";
 import ButtonRight from "./small-components/ButtonRight";
 import "./PokemonList.css";
+import { motion } from "framer-motion/dist/framer-motion";
+
 
 const PokemonList = () => {
    const [pokemons, setPokemons] = useState([]);

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Col, Card } from "react-bootstrap";
+import { motion } from "framer-motion/dist/framer-motion";
 import "./PokemonOfList.css";
 
 const PokemonOfList = ({ name, url, pokemonClicked }) => {

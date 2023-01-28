@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import "./PokemonCard.css";
+import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
+
 
 const PokemonCard = ({ urlPokemonClicked }) => {
    const [pokemonData, setPokemonData] = useState([]);
