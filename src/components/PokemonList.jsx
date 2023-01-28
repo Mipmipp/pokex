@@ -111,7 +111,12 @@ const PokemonList = () => {
                   );
                })}
             </Row>
-            <div className="buttons">
+            <motion.div
+            className="buttons"
+            initial='hidden'
+            animate='visible'
+            variants={variants}
+            >
                <ButtonLeft
                   onClickEvent={() => handleBrowsePreviousPage()}
                   variant={variantButtonLeft}
@@ -120,7 +125,7 @@ const PokemonList = () => {
                   onClickEvent={() => handleBrowseNextPage()}
                   variant={variantButtonRight}
                />
-            </div>
+            </motion.div>
          </div>
       </div>
    );
