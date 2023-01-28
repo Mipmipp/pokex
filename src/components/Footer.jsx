@@ -29,14 +29,14 @@ const Footer = () => {
                      href="https://github.com/Mipmipp"
                      role="button"
                   >
-                     <i className="fab fa-linkedin-in"></i>
+                     <i className="fab fa-github"></i>
                   </a>
                   <a
                      className="btn btn-outline-secondary btn-floating m-1"
                      href="https://www.linkedin.com/in/mipmipp/"
                      role="button"
                   >
-                     <i className="fab fa-github"></i>
+                     <i className="fab fa-linkedin-in"></i>
                   </a>
                   <a
                      className="btn btn-outline-secondary btn-floating m-1"
