@@ -7,12 +7,17 @@ import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 
 const variants = {
    hidden: {
-      scale: 0
+      scale: 0,
+      transition: {
+         duration: 0.5
+      }
    },
    visible: {
       scale: 1,
+      delay: 0.6,
       transition: {
-         duration: 1.5
+         delay: 0.6,
+         duration: 0.5
       }
    },
 }
