@@ -1,8 +1,20 @@
-html {
-   height: 100%;
+/* Works on Firefox */
+* {
+   scrollbar-width: thin;
+   scrollbar-color: #454d52 #7f8790;
+ }
+ 
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 12px;
 }
-
-body {
-   min-height: 100%;
-   margin: auto;
+ 
+*::-webkit-scrollbar-track {
+background: #7f8790;
+}
+ 
+*::-webkit-scrollbar-thumb {
+background-color: #454d52;
+border-radius: 20px;
+border: 3px solid #7f8790;
 }
