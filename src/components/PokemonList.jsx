@@ -97,7 +97,9 @@ const PokemonList = () => {
 
    return (
       <div className="page-layout">
+         <div className="div-card-container">
          <PokemonCard urlPokemonClicked={pokemonClicked} />
+         </div>
          <div className="div-list">
             <Row className="pokemon-list">
                {pokemons.map((pokemon) => {

@@ -5,6 +5,16 @@
    }
 }
 
+@media only screen and (max-width: 1201px) {
+   .div-card-container {
+      position: static !important;
+      height: 590px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 30px;
+   }
+}
+
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
    .pokemon-list {
       margin-left: 0px !important;
