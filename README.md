@@ -23,10 +23,10 @@ This Pokedex is created using:
 - [Framer motion](https://www.framer.com/motion/) - Framer motion is a simple and powerful React animation library.
 - [React-Bootstrap](https://react-bootstrap.github.io/) - React-Bootstrap replaces the Bootstrap JS. Each component has been built from scratch as a true React component.
 
-# Demo
+## Demo
 You can visit this pokedex clicking [here](https://mipmipp-pokedex.netlify.app/) to go to the deploy made with Netlify.
 
-## Installation 🛠️
+## Installation
 #### Run the website locally
 ```
 git clone https://github.com/Mipmipp/pokedex.git pokedex
@@ -44,18 +44,17 @@ npm install
 npm run start
 ```
 
-# Screenshots
+## Screenshots
  
-<div align="center">
-  <h3 align="center">PC screenshot</h3>
-  <br />
-  <img align="center" max-width="600" max-height="600" src="https://i.ibb.co/vQnzgVH/IMG-20221224-WA0006.jpg" />
-  <br />
-  <h3 align="center">Tablet screenshot</h3>
-  <br />
-  <img align="center" max-width="600" max-height="600" src="https://i.ibb.co/vQnzgVH/IMG-20221224-WA0006.jpg" />
-  <br />
-  <h3 align="center">Phone screenshot</h3>
-  <br />
-  <img align="center" max-width="600" max-height="600" src="https://i.ibb.co/vQnzgVH/IMG-20221224-WA0006.jpg" />
-</div>
+ #### PC screenshot
+ 
+<img align="center" max-width="600" max-height="600" alt="pokedex website screenshot on pc view" src="https://i.ibb.co/CmFmzZd/37146335-bdfaee9312cbf21f27a956238e2b8520.png" />
+ 
+ #### Tablet screenshot
+ 
+<img align="center" max-width="600" max-height="600" alt="pokedex website screenshot on tablet view" src="https://i.ibb.co/h1G3YzQ/download.png" />
+ 
+ #### Phone screenshot
+ 
+<img align="center" max-width="600" max-height="600" alt="pokedex website screenshot on phone view" src="https://i.ibb.co/h7xMkDs/download.png" />
+  
