@@ -57,28 +57,27 @@
     color:  var(--mui-palette-primaryBackground-main) !important;
 }
 
-.css-1im7hqj-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+.MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
     color:  var(--mui-palette-green-main) !important;
 }
 
-
-.css-6ffsbr-MuiAutocomplete-root .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
+.MuiAutocomplete-root .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
     color: var(--mui-palette-green-main) !important;
 }
 
-.css-1im7hqj-MuiFormLabel-root-MuiInputLabel-root {
+.MuiFormLabel-root-MuiInputLabel-root {
     color: var(--mui-palette-green-main) !important;
 }
 
-.css-15ldqyv-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator {
+.MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator {
     color: var(--mui-palette-green-main) !important;
 }
 
-.css-udkqe9-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator {
+.MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator {
     color: var(--mui-palette-green-main) !important;
 }
 
-.css-jnltum-MuiOutlinedInput-notchedOutline {
+.MuiOutlinedInput-notchedOutline {
     border-color: var(--mui-palette-green-main) !important;
 }
 
@@ -86,6 +85,14 @@
     color: var(--mui-palette-green-main) !important;
 }
 
-.css-149qh4f-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator {
+.MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator {
+    color: var(--mui-palette-green-main) !important;
+}
+
+.MuiFormLabel-root-MuiInputLabel-root {
+    color: var(--mui-palette-green-main) !important;
+}
+
+.MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
     color: var(--mui-palette-green-main) !important;
 }

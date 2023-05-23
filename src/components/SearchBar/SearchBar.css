@@ -1,15 +1,15 @@
-.css-jnltum-MuiOutlinedInput-notchedOutline {
+.MuiOutlinedInput-notchedOutline {
     opacity: 80%;
     border-color: var(--mui-palette-gray-main) !important;
     border-radius: 15px !important;
 }
 
-.css-e6p3j7-MuiFormLabel-root-MuiInputLabel-root {
+.MuiFormLabel-root-MuiInputLabel-root {
     opacity: 100%;
     border-color: var(--mui-palette-gray-main) !important;
 }
 
-.css-e6p3j7-MuiFormLabel-root-MuiInputLabel-root {
+.MuiFormLabel-root-MuiInputLabel-root {
     opacity: 80% !important;
     font-size: 13px !important;
     font-family: 'Open Sans', sans-serif !important;

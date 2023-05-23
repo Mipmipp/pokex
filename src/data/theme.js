@@ -40,6 +40,15 @@ export const theme = extendTheme({
                 green: {
                     main: "#9fc0a3",
                 },
+                text: {
+                    secondary: "#9fc0a3",
+                },
+                primary: {
+                    main: "#9fc0a3",
+                },
+                action: {
+                    active: "#9fc0a3",
+                },
                 blue: {
                     main: "#dde4eb",
                 },
@@ -81,16 +90,25 @@ export const theme = extendTheme({
                     main: "#8c1717",
                 },
                 purple: {
-                main: "#7d6a9c",
+                    main: "#7d6a9c",
                 },
                 green: {
-                main: "#6b8c73",
+                    main: "#6b8c73",
+                },
+                text: {
+                    secondary: "#6b8c73",
+                },
+                primary: {
+                    main: "#6b8c73",
+                },
+                action: {
+                    active: "#6b8c73",
                 },
                 blue: {
-                main: "#a9b4c0",
+                    main: "#a9b4c0",
                 },
                 gray: {
-                main: "#9c9c9c",
+                    main: "#9c9c9c",
                 },                  
             },
         },
