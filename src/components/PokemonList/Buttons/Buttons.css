@@ -1,0 +1,18 @@
+.button {
+    background: var(--mui-palette-buttonBackground-main) !important;
+    color: var(--mui-palette-buttonColor-main) !important;
+}
+
+.button:hover {
+    color: var(--mui-palette-gray-main) !important;
+}
+
+.error-button {
+    background: var(--mui-palette-buttonBackground-main) !important;
+    color: var(--mui-palette-gray-main) !important;
+}
+
+.error-button:hover {
+    background: var(--mui-palette-buttonErrorBackground-main) !important;
+    color: var(--mui-palette-buttonColor-main) !important;
+}

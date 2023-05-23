@@ -1,0 +1,91 @@
+.nav {
+    box-shadow: none !important;
+    position: static !important;
+    background-color: inherit !important;
+    background-image: none !important;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: center;
+    background-color: inherit !important;
+}
+
+.toolbar-nav {
+    display: flex;
+    width: 80%;
+    max-width: 1680px !important;
+}
+
+.title-nav {
+    display: flex !important;
+    width: 50% !important;
+    height: 40px !important;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color:  var(--mui-palette-green-main);
+}
+
+.title-nav p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0px !important;
+}
+
+.utilities-nav {
+    display: flex !important;
+    justify-content: flex-end !important;
+    gap: 40px;
+    width: 50% !important;
+    font-size: 16px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 400;
+    color:  var(--mui-palette-primaryBackground-main);
+}
+
+.change-theme-button{
+    width: 34px !important;
+    height: 34px !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    padding: 8px !important;
+    background:  var(--mui-palette-purple-main) !important;
+    border-radius: 10px !important;
+    font-size: 1.5rem !important;
+    color:  var(--mui-palette-primaryBackground-main) !important;
+}
+
+.css-1im7hqj-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color:  var(--mui-palette-green-main) !important;
+}
+
+
+.css-6ffsbr-MuiAutocomplete-root .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
+    color: var(--mui-palette-green-main) !important;
+}
+
+.css-1im7hqj-MuiFormLabel-root-MuiInputLabel-root {
+    color: var(--mui-palette-green-main) !important;
+}
+
+.css-15ldqyv-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator {
+    color: var(--mui-palette-green-main) !important;
+}
+
+.css-udkqe9-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator {
+    color: var(--mui-palette-green-main) !important;
+}
+
+.css-jnltum-MuiOutlinedInput-notchedOutline {
+    border-color: var(--mui-palette-green-main) !important;
+}
+
+#search-bar-label {
+    color: var(--mui-palette-green-main) !important;
+}
+
+.css-149qh4f-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator {
+    color: var(--mui-palette-green-main) !important;
+}
