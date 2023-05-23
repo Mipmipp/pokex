@@ -1,0 +1,25 @@
+.creator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+  
+.creator p {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: var(--mui-palette-green-main);
+}
+
+
+.creator a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+  
+.creator a:hover {
+  text-decoration: underline;
+}
