@@ -18,3 +18,9 @@ background-color: #454d52;
 border-radius: 20px;
 border: 3px solid #7f8790;
 }
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background:  var(--mui-palette-primaryBackground-main);
+}
