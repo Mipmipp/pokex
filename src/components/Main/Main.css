@@ -1,0 +1,32 @@
+.main-layout {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    max-width: 1680px;
+    min-height: 100%;
+    margin-right: auto;
+    margin-bottom: 32px;
+    margin-left: auto;
+    background: var(--mui-palette-secondaryBackground-main);
+    border-radius: 35px;
+}
+  
+.main-layout > div {
+    display:flex;
+    flex:1;
+    padding-top: 25px !important;
+}
+
+.card-layout {
+    height: fit-content;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+.list-layout {
+    height: fit-content;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
