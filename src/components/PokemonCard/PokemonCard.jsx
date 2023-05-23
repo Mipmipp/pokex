@@ -6,6 +6,7 @@ import "./PokemonCard.css";
 export default function PokemonCard(props) {
     const { pokemonValue, flavorValue } = useContext(PokedexContext);
     const [currentPokemon, setCurrentPokemon] = pokemonValue;
+    // eslint-disable-next-line
     const [currentFlavor, setCurrentFlavor] = flavorValue;
 
     const pokemonURL = `https://pokeapi.co/api/v2/pokemon/${props.name}/`;

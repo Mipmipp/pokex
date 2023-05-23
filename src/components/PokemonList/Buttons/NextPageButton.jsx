@@ -7,6 +7,7 @@ import "./Buttons.css";
 
 export default function NextPageButton(props) {
     const { pageValue } = useContext(PokedexContext);
+    // eslint-disable-next-line
     const [currentPage, setCurrentPage] = pageValue;
 
     return (

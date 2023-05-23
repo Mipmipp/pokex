@@ -9,6 +9,7 @@ import "./SearchBar.css";
 
 export default function ControllableStates() {
     const { pokemonValue } = useContext(PokedexContext);
+    // eslint-disable-next-line
     const [currentPokemon, setCurrentPokemon] = pokemonValue;
     const [value, setValue] = useState(null);
 
@@ -25,7 +26,6 @@ export default function ControllableStates() {
 
         return (
             <Autocomplete
-                id="search-bar"
                 value={value}
                 onChange={(event, newValue) => {
                     setValue(newValue);
