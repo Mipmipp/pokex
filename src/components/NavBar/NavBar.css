@@ -3,6 +3,7 @@
     position: static !important;
     background-color: inherit !important;
     background-image: none !important;
+    opacity: 70% !important;
 }
 
 .container-nav {
