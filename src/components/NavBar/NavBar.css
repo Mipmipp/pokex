@@ -80,6 +80,7 @@
 
 .MuiOutlinedInput-notchedOutline {
     border-color: var(--mui-palette-green-main) !important;
+    opacity: 80% !important;
 }
 
 #search-bar-label {
