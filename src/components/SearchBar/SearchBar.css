@@ -1,16 +1,16 @@
 .MuiOutlinedInput-notchedOutline {
-    opacity: 100% !important;
+    opacity: 1;
     border-color: var(--mui-palette-gray-main) !important;
     border-radius: 15px !important;
 }
 
 .MuiFormLabel-root-MuiInputLabel-root {
-    opacity: 100%;
+    opacity: 1;
     border-color: var(--mui-palette-gray-main) !important;
 }
 
 .MuiFormLabel-root-MuiInputLabel-root {
-    opacity: 100% !important;
+    opacity: 1;
     font-size: 13px !important;
     font-family: 'Open Sans', sans-serif !important;
     font-weight: 400 !important;
@@ -18,7 +18,7 @@
 }
 
 #utilities-nav input {
-    opacity: 100% !important;
+    opacity: 1;
     font-size: 13px !important;
     font-family: 'Open Sans', sans-serif !important;
     font-weight: 400 !important;
@@ -26,7 +26,7 @@
 }
 
 #utilities-nav label {
-    opacity: 100% !important;
+    opacity: 1;
     font-size: 13px !important;
     font-family: 'Open Sans', sans-serif !important;
     font-weight: 400 !important;
@@ -34,19 +34,19 @@
 }
 
 #utilities-nav input:hover {
-    opacity: 100% !important;
+    opacity: 1;
 }
 
 #utilities-nav label:hover {    
-    opacity: 100% !important;
+    opacity: 1;
 }
 
 #utilities-nav div {
-    opacity: 100%v;
+    opacity: 1;
     border: solid 1px var(--mui-palette-gray-main) !important;
     border-radius: 15px !important;
 }
 
 #utilities-nav div:hover {
-    opacity: 100%;
+    opacity: 1;
 }

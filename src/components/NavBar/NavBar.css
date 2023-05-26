@@ -3,7 +3,7 @@
     position: static !important;
     background-color: inherit !important;
     background-image: none !important;
-    opacity: 70% !important;
+    opacity: 0.8;
 }
 
 .container-nav {
@@ -80,7 +80,6 @@
 
 .MuiOutlinedInput-notchedOutline {
     border-color: var(--mui-palette-green-main) !important;
-    opacity: 80% !important;
 }
 
 #search-bar-label {
