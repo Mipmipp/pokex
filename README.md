@@ -51,11 +51,12 @@ If you have any questions, suggestions, or feedback, feel free to reach out to m
 
 Here are some screenshots of the PokeX application:
 
-![PC view](https://raw.githubusercontent.com/Mipmipp/pokex/main/src/assets/screenshots/screenshot-pc.png)
 _PokeX website view on PC._
+![PC view](https://raw.githubusercontent.com/Mipmipp/pokex/main/src/assets/screenshots/screenshot-pc.png)
 
+_PokeX website view on tablet._
 ![Tablet view](https://raw.githubusercontent.com/Mipmipp/pokex/main/src/assets/screenshots/screenshot-tablet.png)
-PokeX website view on tablet._
 
-![Phone view](https://raw.githubusercontent.com/Mipmipp/pokex/main/src/assets/screenshots/screenshot-phone.png)
 _PokeX website view on phone._
+<br>
+<img src="https://raw.githubusercontent.com/Mipmipp/pokex/main/src/assets/screenshots/screenshot-phone.png" alt="phone view" style="height: 400px; width: auto;">
