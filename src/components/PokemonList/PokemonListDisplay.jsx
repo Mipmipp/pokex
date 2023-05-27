@@ -21,7 +21,9 @@ export default function PokemonListDisplay({
                     return (
                         <Grid
                             item
-                            xs={3}
+                            xs={6}
+                            sm={4}
+                            md={3}
                             key={`grid-${index}`}
                             className="pokemon-of-list"
                         >

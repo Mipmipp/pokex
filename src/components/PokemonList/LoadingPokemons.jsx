@@ -10,7 +10,14 @@ export default function LoadingPokemons({ totalPokemonsList }) {
         <Box className="box-container">
             <Grid container spacing={2} className="pokemon-list">
                 {Array.from({ length: totalPokemonsList }, (_, index) => (
-                    <Grid item xs={3} className="pokemon-of-list" key={index}>
+                    <Grid
+                        item
+                        xs={6}
+                        sm={4}
+                        md={3}
+                        className="pokemon-of-list"
+                        key={index}
+                    >
                         <PokemonCardLoading key={`loading-${index}`} />
                     </Grid>
                 ))}
