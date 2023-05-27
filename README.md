@@ -1,60 +1,61 @@
-<div align="center">
-  <img align="center" width="250" height="250" alt="Snorlax gif" src="https://www.pngplay.com/wp-content/uploads/12/Snorlax-Pokemon-Free-PNG-Clip-Art.gif" />
-  <h3 align="center">Pokedex</h3>
-  <p align="center">made consuming <a href="https://pokeapi.co/"><span>PokeApi</a></p>
-</div>
+# ![Favicon](https://raw.githubusercontent.com/Mipmipp/pokex/main/public/favicon.png)   PokeX
 
-<hr />
+PokeX is an interactive Pokedex that allows you to explore detailed information about Pokemon. You can navigate through a list of Pokemon, search by name, and view details such as sprites, description, stats, and stat charts in an interactive card. The project is developed in React and utilizes various technologies and libraries to provide a complete experience.
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1bdf6936-fb52-47ab-a4ed-fa4c8f200d57/deploy-status)](https://app.netlify.com/sites/mipmipp-pokedex/deploys)
+## Deployment
 
-<hr />
+PokeX is deployed and accessible online. You can visit the live version of the application by following this link: [PokeX Live Demo](https://pokex-mipmipp.netlify.app/)
 
-This is a pokedex where you can see a list of all the pokemones that exist today.
-<br />
-In addition, you can see their sprites, basic information such as their description, statistics, weight and height, all shown as a pokemon card.
+## Features
 
-## Technology
-This Pokedex is created using:
-- [React](https://reactjs.org) - React is a JavaScript library for building user interfaces.
-- [React query](https://react-query-v3.tanstack.com/) - React query is a library for managing, caching and syncing asynchronous and remote data in React.
-- [Framer motion](https://www.framer.com/motion/) - Framer motion is a simple and powerful React animation library.
-- [React-Bootstrap](https://react-bootstrap.github.io/) - React-Bootstrap replaces the Bootstrap JS. Each component has been built from scratch as a true React component.
-
-## Demo
-You can visit this pokedex clicking [here](https://mipmipp-pokedex.netlify.app/) to go to the deploy made with Netlify.
+- Intuitive navigation through a list of Pokemon.
+- Quick search for Pokemon by name.
+- Display of sprites, description, stats, and stat charts in an interactive card.
+- Dark and light mode to adapt to your visual preferences.
+- Loading screen for an improved user experience.
+- Error handling for a smooth interaction.
+- Built with React, Victoria for stat charts, React Query for caching and storing PokeAPI data to reduce data usage.
+- Organized folder structure for clean and maintainable code.
+- Utilizes Material UI for an attractive and responsive interface.
 
 ## Installation
-#### Run the website locally
-```
-git clone https://github.com/Mipmipp/pokedex.git pokedex
-```
-#### Install
 
+1. Clone this repository on your local machine.
+2. Open a terminal in the project folder.
+3. Run the following command to install the dependencies:
 ```bash
-# Install deps
 npm install
 ```
-
-#### Run server localhost
-
+4. Once the installation is complete, you can start the application with the following command:
 ```bash
 npm run start
 ```
+5. Access the application in your browser through the URL: http://localhost:3000.
+
+## Usage
+
+1. Upon opening the application, you will see the list of available Pokémon.
+2. Click on a Pokémon from the list to view its detailed information in an interactive card.
+3. Use the search bar to search for a specific Pokémon by name.
+4. Explore different details such as sprites, description, stats, and stat charts in the Pokémon's interactive card.
+5. Switch between dark and light mode according to your preferences.
+6. Enjoy exploring and learning about Pokémon in PokeX.
+
+## Contact Me
+
+If you have any questions, suggestions, or feedback, feel free to reach out to me.
+
+- Email: [imipmipp@gmail.com](mailto:imipmipp@gmail.com)
 
 ## Screenshots
- 
- #### PC screenshot
- 
-<img align="center" max-width="600" max-height="600" alt="pokedex website screenshot on pc view" src="https://i.ibb.co/CmFmzZd/37146335-bdfaee9312cbf21f27a956238e2b8520.png" />
- 
- #### Tablet screenshot
- 
-<img align="center" max-width="600" max-height="600" alt="pokedex website screenshot on tablet view" src="https://i.ibb.co/h1G3YzQ/download.png" />
- 
- #### Phone screenshot
- 
-<img align="center" max-width="600" max-height="600" alt="pokedex website screenshot on phone view" src="https://i.ibb.co/h7xMkDs/download.png" />
-  
+
+Here are some screenshots of the PokeX application:
+
+![PC view](https://raw.githubusercontent.com/Mipmipp/pokex/main/src/assets/screenshots/screenshot-pc.png)
+_PokeX website view on PC._
+
+![Tablet view](https://raw.githubusercontent.com/Mipmipp/pokex/main/src/assets/screenshots/screenshot-tablet.png)
+PokeX website view on tablet._
+
+![Phone view](https://raw.githubusercontent.com/Mipmipp/pokex/main/src/assets/screenshots/screenshot-phone.png)
+_PokeX website view on phone._
