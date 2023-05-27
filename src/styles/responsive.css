@@ -1,0 +1,94 @@
+@media (min-width: 320px) and (max-width: 500px) {
+    .toolbar-nav {
+        flex-wrap: wrap;
+    }
+
+    .title-nav, .utilities-nav {
+        flex: 1 1 100%;
+        max-width: none !important;
+        margin-bottom: 20px;
+    }
+
+    .title-nav p {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    .big-card-pokemon {
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content !important;
+    }
+
+    .big-card-section-1, .big-card-section-2, .big-card-section-3, .big-card-section-4 {
+        flex: 1 1 100%;
+        max-width: none !important;
+        border-radius: 0;
+    }
+
+    .big-card-section-1 {
+        border-top-left-radius: 25px !important;
+        border-top-right-radius: 25px !important;
+    }
+
+    .big-card-section-4 {
+        border-bottom-right-radius: 25px !important;
+        border-bottom-left-radius: 25px !important;
+    }
+
+    .big-card-information, .big-card-pokemon-types {
+        margin-right: 0 !important;
+    }
+
+    .big-card-pokemon-description {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .list-layout {
+        padding-left: 25px;
+    }
+
+    .loading-pokemon-selected {
+        height: 1100px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1100px) {
+    .main-layout {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-layout > div {
+        flex: 1 1 100%;
+    }
+
+    .title-nav, .utilities-nav {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .VictoryContainer > svg:nth-child(1) {
+        scale: 1;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1100px) {
+    .main-layout > div {
+        flex: 1 1 100%;
+    }
+
+    .card-layout {
+        padding-left: 0px;
+    }
+
+    .big-card-pokemon {
+        justify-content: center;
+        margin-right: 0px !important;
+    }
+
+    .list-layout {
+        padding-left: 25px;
+    }
+}
