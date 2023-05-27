@@ -5,6 +5,8 @@ import { PokedexProvider } from "../hooks/PokedexProvider.jsx";
 import { Main } from "./Main/Main.jsx";
 import NavBar from "./NavBar/NavBar.jsx";
 import Footer from "./Footer/Footer.jsx";
+import "../styles/index.css";
+import "../styles/responsive.css";
 
 const App = () => {
     return (
