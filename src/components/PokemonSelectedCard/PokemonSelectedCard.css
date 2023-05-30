@@ -277,6 +277,10 @@
     border-bottom-right-radius: 25px;
 }
 
+.VictoryContainer {
+    touch-action: auto !important;
+}
+
 .VictoryContainer > svg:nth-child(1) {
     scale: 1.2;
     height: revert-layer !important;
